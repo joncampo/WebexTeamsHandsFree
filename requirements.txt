@@ -1,3 +1,4 @@
 requests
 Flask
 Flask-Ask
+cryptography<2.2
