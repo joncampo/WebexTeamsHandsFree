@@ -3,6 +3,7 @@ import requests
 import json
 import time
 import sys
+import os
 from flask import Flask
 from flask_ask import Ask, statement, question, session
 
