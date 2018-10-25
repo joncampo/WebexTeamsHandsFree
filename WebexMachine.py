@@ -84,14 +84,14 @@ def start_skill():
     #    all_rooms=api.rooms.list()
     #except:
     #    return statement ("Error encountered on API")
-    welcome_message="Hello there, which webex teams room do you like to listen to? Say space then the name of the Webex Teams Space. Example space GVE Enterprise Network"
+    welcome_message="Hello there, which webex teams room do you like to listen to? Say space then the name of the Webex Teams Space."
     return question (welcome_message)
 
 @ask.intent("YesIntent")
 def Yes_intent():
     #headlines=get_headlines()
     if session.attributes['reply'] == 0:
-        yes_msg="Which webex teams room do you like to listen to? Say space then the name of the Webex Teams Space. Example space GVE Enterprise Network"
+        yes_msg="Which webex teams room do you like to listen to? Say space then the name of the Webex Teams Space."
     elif session.attributes['reply'] == 1:
         yes_msg="What is your message? Say Reply then your message. Example Reply Hi!"
 
@@ -114,7 +114,7 @@ def List_Message_intent(room_name):
 
     except:
         message_text="I can't access find "+room_name
-        ending_text="What is the webex teams space again? Say space then the name of the Webex Teams Space. Example space GVE Enterprise Network"
+        ending_text="What is the webex teams space again? Say space then the name of the Webex Teams Space."
 
 
     
