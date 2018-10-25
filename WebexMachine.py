@@ -10,7 +10,7 @@ from flask_ask import Ask, statement, question, session
 #global all_rooms
 
 
-WEBEX_TEAMS_ACCESS_TOKEN="NmZhM2FkYTktMWJjNy00Y2E2LTgxYmItMTU4MzEyMzQ2YTAxMjkzOGE2ODctY2My"
+WEBEX_TEAMS_ACCESS_TOKEN="XXXX"
 
 from webexteamssdk import WebexTeamsAPI
 api = WebexTeamsAPI(access_token=WEBEX_TEAMS_ACCESS_TOKEN)
